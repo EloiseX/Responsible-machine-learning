@@ -35,6 +35,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ### Training data
 
+Home Mortgage Disclosure Act data was downloaded from Github class repository for academical use. 
+
 
 ### Evaluation data
 
