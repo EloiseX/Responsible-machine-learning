@@ -5,16 +5,8 @@
 
 ### Model developing person
 
-Name: 
-Email:
-
-### Model date
-
-
-### Model version
-
-
-### Model type
+Name: Yiliang Xu /
+Email: yiliangxu@gwu.edu
 
 
 ### License
