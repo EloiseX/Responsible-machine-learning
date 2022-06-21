@@ -1,13 +1,9 @@
-# Model training
-
-## Introduction 
-
+# Model Card
 
 ### Model developing person
 
-Name: Yiliang Xu   
-Email: yiliangxu@gwu.edu  
-
+Name:   Yiliang Xu   
+Email:  yiliangxu@gwu.edu  
 
 ### License
 
@@ -20,14 +16,14 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 *DISCLAIMER*: This notebook is nnot legal or compilance advice.
 
-## Model information
+## Model details
 
 ### Intended use
 
 
 ### Training data
 
-Home Mortgage Disclosure Act data was downloaded from Github class repository for academical use. 
+Home Mortgage Disclosure Act data was downloaded from Github class repository for academical use. In order to fit the interpretable maching learning model, I splited the home mortgage data into 70% of train partition and 30% of test partition. This preprocessed and labeled dataset contains 160338 rows with numeric measurements and binary values.   
 
 
 ### Evaluation data
