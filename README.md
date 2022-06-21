@@ -55,22 +55,22 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
       22  high_priced                   160338 non-null  int64  
       '''      
 
-**row_id** : an unique id for each candidate.  
-*black*, *asian*, *white*, *amind*, *hipac*, *hispanic*, *non_hispanic*: Binary numeric input, whether a candidate belongs to this region (1) or not (0).  
-*male*, *female*: Binary numeric input, gender of candidates.  
-*agegte62*:  
-*agelt62*:  
-*term_360*: Binary numeric input,  whether the morgage is a standard 360 month mortgage (1) or a different type of morgage(0).  
-*conforming*:  
-*debt_to_incom_ratio_missing*:  
-*loan_amount_std*:  
-*loan_to_value_ratio_std*:  
-*no_intro_rate_period_std*:  
-*intro_rate_period_std*:  
-*property_value_std*:  
-*income_std*:  
-*debt_to_income_ratio_std*:  
-*high_priced*:  
+**row_id**: an unique id for each candidate.  
+**black**, **asian**, **white**, **amind**, **hipac**, **hispanic**, **non_hispanic**: Binary numeric input, whether a candidate belongs to this region (1) or not (0). 
+**male**, **female**: Binary numeric input, gender of candidates.  
+**agegte62**:  
+**agelt62**:  
+**term_360**: Binary numeric input,  whether the morgage is a standard 360 month mortgage (1) or a different type of morgage(0).  
+**conforming**: Binary numeric input, whether the morgage conforms to normal standards (1), or whether the load is differnet (0).  
+**debt_to_incom_ratio_missing**: Binary numeric input, missing maker (1) for debt_incom_ratio_std.  
+**loan_amount_std**: Numeric input, standardized mortgage amount for candidates.  
+**loan_to_value_ratio_std**: Numeric input, ratio of the mortgage size to the value of property for morgage candidates.      
+**no_intro_rate_period_std**: Binary numeric input, whether a morgage does not include an introductory rate period (1) or not (0).   
+**intro_rate_period_std**: Numeric input, standardized introductory rate period for morgage candadites.    
+**property_value_std**: Numeric input, value of the mortgaged property.   
+**income_std**: Numeric input, standardized income for mortgage candidates. 
+**debt_to_income_ratio_std**: Numeric input, standardized debt-to-income ratio for mortgage candidates. 
+**high_priced**: Binary target, whether the annual percentage rate (APR) charged for a mortage is 1.5% or more above a survey-based estimate of similar mortgage (1) or                  not (0).   
 
 ### Evaluation data
 
