@@ -5,8 +5,8 @@
 
 ### Model developing person
 
-Name: Yiliang Xu\n 
-Email: yiliangxu@gwu.edu
+Name: Yiliang Xu   
+Email: yiliangxu@gwu.edu  
 
 
 ### License
