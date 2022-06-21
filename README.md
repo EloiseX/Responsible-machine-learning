@@ -55,7 +55,7 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
       22  high_priced                   160338 non-null  int64  
       '''      
 
-**row_id**: an uniique id for each candidate.  
+**row_id** : an unique id for each candidate.  
 *black*, *asian*, *white*, *amind*, *hipac*, *hispanic*, *non_hispanic*: Binary numeric input, whether a candidate belongs to this region (1) or not (0).  
 *male*, *female*: Binary numeric input, gender of candidates.  
 *agegte62*:  
