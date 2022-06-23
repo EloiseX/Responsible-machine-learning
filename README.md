@@ -14,7 +14,7 @@ Licensed under the Apacha License, Version 2.0 (the "License");you may not use t
      
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-*DISCLAIMER*: This notebook is nnot legal or compilance advice.
+*DISCLAIMER*: This notebook is not legal or compilance advice.
 
 ## Model details
 
