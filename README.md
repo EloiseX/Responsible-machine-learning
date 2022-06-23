@@ -85,7 +85,7 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
 
 **debt_to_income_ratio_std**: Numeric input, standardized debt-to-income ratio for mortgage candidates. 
 
-**high_priced**: Binary target, whether the annual percentage rate (APR) charged for a mortage is 1.5% or more above a survey-based estimate of similar mortgage (1) or                  not (0).   
+**high_priced**: Binary target, whether the annual percentage rate (APR) charged for a mortage is 1.5% or more above a survey-based estimate of similar mortgage (1) or not (0).   
 
 ### 3. Evaluation data  
   
