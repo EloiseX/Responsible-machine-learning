@@ -61,9 +61,9 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
 
 **male**, **female**: Binary numeric input, gender of candidates.  
 
-**agegte62**:  
+**agegte62**: Binary numeric input, whether the age of a candidate is greater than 62 (1) or not (0).   
 
-**agelt62**:  
+**agelt62**: Binary numeric input, whether the age of a candidate is less than 62 (1) or not (0).  
 
 **term_360**: Binary numeric input,  whether the morgage is a standard 360 month mortgage (1) or a different type of morgage(0).  
 
