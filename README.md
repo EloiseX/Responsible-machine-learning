@@ -89,7 +89,7 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
 
 ### 3. Evaluation data  
   
-The test data of Home Mortgage Disclosur Act was derived from Github class repository for academical use. There are 19831 rows in the test dataset. The information about columns and data type is shown below.  
+The evaluation (or test) data of Home Mortgage Disclosur Act was derived from Github class repository for academical use. There are 19831 rows in the preprocessed and unlabeled test dataset. The information about columns and data type is shown below.  
 
      '''
      RangeIndex: 19831 entries, 0 to 19830
@@ -118,10 +118,16 @@ The test data of Home Mortgage Disclosur Act was derived from Github class repos
       19  property_value_std            19831 non-null  float64
       20  income_std                    19831 non-null  float64
       21  debt_to_income_ratio_std      19831 non-null  float64
-     '''
+     '''  
+Compared with training data, evaluation (or test) data containes 22 columns without column **high_priced**, the target feature. Therefore, I can compete the result where label for evaluation data is not given to avoid learning from evaluation data.  
 
-### 4. Model details
+### 4. Model details  
 
+For the model part, I selected 10 columns as inputs (X variables) in the best remediated EBM model including **term_360**, **conforming**, **debt_to_incom_ratio_missing**, **loan_amount_std**, **loan_to_value_ratio_std**, **no_intro_rate_period_std**, **intro_rate_period_std**, **property_value_std**, **income_std**, and **debt_to_income_ratio_std**.
+
+**high_priced** is the target vaiable of the best remediated EBM model.
+
+In terms of the best remediated model, EBM outperformes other two models (Elastic Net model, Monotonic XGBoost model)
 
 ### 5. Quantitative analysis
 
