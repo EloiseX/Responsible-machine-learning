@@ -137,19 +137,19 @@ Compared with training data, evaluation (or test) data containes 22 columns with
 
      The best remediated model EBM was trained with Python in Jupyter Notebook. I applied several packages to train this EBM model including numpy, pandas, interpret, h2o, xgboost etc. Here is the applied packages and version.
 
-     '''
-     # Python 3.6.9
-     
-     h2o==3.32.1.3
-     interpret==0.2.4
-     jupyter==1.0.0 
-     matplotlib==3.3.4
-     numpy==1.19.5
-     pandas==1.1.5
-     scikit-learn==0.24.2
-     seaborn==0.11.1
-     xgboost==1.4.2
-     '''  
+          '''
+          # Python 3.6.9  
+          
+          h2o==3.32.1.3
+          interpret==0.2.4
+          jupyter==1.0.0 
+          matplotlib==3.3.4
+          numpy==1.19.5
+          pandas==1.1.5
+          scikit-learn==0.24.2
+          seaborn==0.11.1
+          xgboost==1.4.2
+          '''  
 4. Model hyperparameters   
 
      The hyperparameters and settings for the EBM is shown below.
@@ -168,10 +168,12 @@ Compared with training data, evaluation (or test) data containes 22 columns with
           early_stopping_rounds = 100
           seed = 12345                          # set numpy random seed for better reproducibility
           NTHREAD = 4                           # set number of threads  
-          '''
-
-
+          '''  
+          
 ### Quantitative analysis
 
+1. Metrics  
+
+     The best remediated EBM is a classificiation system yo predict the  
 
 ### Ethical consideration
