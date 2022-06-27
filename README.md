@@ -123,11 +123,33 @@ Compared with training data, evaluation (or test) data containes 22 columns with
 
 ### 4. Model details  
 
+1. Model inputs and target
+
 For the model part, I selected 10 columns as inputs (X variables) in the best remediated EBM model including **term_360**, **conforming**, **debt_to_incom_ratio_missing**, **loan_amount_std**, **loan_to_value_ratio_std**, **no_intro_rate_period_std**, **intro_rate_period_std**, **property_value_std**, **income_std**, and **debt_to_income_ratio_std**.
 
 **high_priced** is the target vaiable of the best remediated EBM model.
 
-In terms of the best remediated model, EBM outperformes other two models (Elastic Net model, Monotonic XGBoost model)
+2.Model Type
+
+In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.
+
+3. Model version
+
+The best remediated model EBM was trained with Python in Jupyter Notebook. I applied several packages to train this EBM model including numpy, pandas, interpret, h2o, xgboost etc. Here is the applied packages and version.
+
+     '''
+     # Python 3.6.9
+     
+     h2o==3.32.1.3
+     interpret==0.2.4
+     jupyter==1.0.0 
+     matplotlib==3.3.4
+     numpy==1.19.5
+     pandas==1.1.5
+     scikit-learn==0.24.2
+     seaborn==0.11.1
+     xgboost==1.4.2
+     '''
 
 ### 5. Quantitative analysis
 
