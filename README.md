@@ -129,7 +129,7 @@ For the model part, I selected 10 columns as inputs (X variables) in the best re
 
 **high_priced** is the target vaiable of the best remediated EBM model.  
 
-2.Model Type
+2. Model Type
 
 In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.  
 
