@@ -125,17 +125,17 @@ Compared with training data, evaluation (or test) data containes 22 columns with
 
 1. Model inputs and target
 
-For the model part, I selected 10 columns as inputs (X variables) in the best remediated EBM model including **term_360**, **conforming**, **debt_to_incom_ratio_missing**, **loan_amount_std**, **loan_to_value_ratio_std**, **no_intro_rate_period_std**, **intro_rate_period_std**, **property_value_std**, **income_std**, and **debt_to_income_ratio_std**.
+     For the model part, I selected 10 columns as inputs (X variables) in the best remediated EBM model including **term_360**, **conforming**, **debt_to_incom_ratio_missing**, **loan_amount_std**, **loan_to_value_ratio_std**, **no_intro_rate_period_std**, **intro_rate_period_std**, **property_value_std**, **income_std**, and **debt_to_income_ratio_std**.
 
-**high_priced** is the target vaiable of the best remediated EBM model.  
+     **high_priced** is the target vaiable of the best remediated EBM model.  
 
 2. Model Type
 
-In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.  
+     In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.  
 
 3. Model version
 
-The best remediated model EBM was trained with Python in Jupyter Notebook. I applied several packages to train this EBM model including numpy, pandas, interpret, h2o, xgboost etc. Here is the applied packages and version.
+     The best remediated model EBM was trained with Python in Jupyter Notebook. I applied several packages to train this EBM model including numpy, pandas, interpret, h2o, xgboost etc. Here is the applied packages and version.
 
      '''
      # Python 3.6.9
@@ -152,23 +152,23 @@ The best remediated model EBM was trained with Python in Jupyter Notebook. I app
      '''  
 4. Model hyperparameters   
 
-The hyperparameters and settings for the EBM is shown below.
+     The hyperparameters and settings for the EBM is shown below.
 
-     '''
-     max_bins: [128, 256, 512],
-     max_interaction_bins: [16, 32, 64],
-     interactions: [5, 10, 15],
-     outer_bags: [4, 8, 12], 
-     inner_bags: [0, 4],
-     learning_rate: [0.001, 0.01, 0.05],
-     validation_size: [0.1, 0.25, 0.5],
-     min_samples_leaf: [1, 2, 5, 10],
-     max_leaves: [1, 3, 5]
+          '''
+          max_bins: [128, 256, 512],
+          max_interaction_bins: [16, 32, 64],
+          interactions: [5, 10, 15],
+          outer_bags: [4, 8, 12], 
+          inner_bags: [0, 4],
+          learning_rate: [0.001, 0.01, 0.05],
+          validation_size: [0.1, 0.25, 0.5],
+          min_samples_leaf: [1, 2, 5, 10],
+          max_leaves: [1, 3, 5]
 
-     early_stopping_rounds = 100
-     seed = 12345                          # set numpy random seed for better reproducibility
-     NTHREAD = 4                           # set number of threads  
-     '''
+          early_stopping_rounds = 100
+          seed = 12345                          # set numpy random seed for better reproducibility
+          NTHREAD = 4                           # set number of threads  
+          '''
 
 
 ### Quantitative analysis
