@@ -18,10 +18,10 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## Model details
 
-### 1. Intended use
+### Intended use
 
 
-### 2. Training data
+### Training data
 
 Home Mortgage Disclosure Act data was downloaded from Github class repository for academical use. In order to fit the interpretable maching learning model, I splited this preprocessed and labeled dataset into 70% of train partition and 30% of test partition. In the training dataset, there are 112253 rows with numeric measurements and binary values. Validation dataset contains 48085 rows in total. Here is a berif describtion of Home Mortgage Disclosure Act dataset:  
 
@@ -87,7 +87,7 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
 
 **high_priced**: Binary target, whether the annual percentage rate (APR) charged for a mortage is 1.5% or more above a survey-based estimate of similar mortgage (1) or not (0).   
 
-### 3. Evaluation data  
+### Evaluation data  
   
 The evaluation (or test) data of Home Mortgage Disclosur Act was derived from Github class repository for academical use. There are 19831 rows in the preprocessed and unlabeled test dataset. The information about columns and data type is shown below.  
 
@@ -121,17 +121,17 @@ The evaluation (or test) data of Home Mortgage Disclosur Act was derived from Gi
      '''  
 Compared with training data, evaluation (or test) data containes 22 columns without column **high_priced**, the target feature. Therefore, I can compete the result where label for evaluation data is not given to avoid learning from evaluation data.  
 
-### 4. Model details  
+### Model details  
 
 1. Model inputs and target
 
 For the model part, I selected 10 columns as inputs (X variables) in the best remediated EBM model including **term_360**, **conforming**, **debt_to_incom_ratio_missing**, **loan_amount_std**, **loan_to_value_ratio_std**, **no_intro_rate_period_std**, **intro_rate_period_std**, **property_value_std**, **income_std**, and **debt_to_income_ratio_std**.
 
-**high_priced** is the target vaiable of the best remediated EBM model.
+**high_priced** is the target vaiable of the best remediated EBM model.  
 
 2.Model Type
 
-In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.
+In terms of the best remediated model, explainable boosting machine (EBM) outperformes other two models (Elastic net logistic regression, Monotonic gradient boosting machines) considering the AUC score. EBM is a gradient boosting generalized additive model with interaction term based on decision trees. Compared with Random Forest and other machine learning models, EBM is a glass-box model which is more explainable.  
 
 3. Model version
 
@@ -149,9 +149,13 @@ The best remediated model EBM was trained with Python in Jupyter Notebook. I app
      scikit-learn==0.24.2
      seaborn==0.11.1
      xgboost==1.4.2
-     '''
+     '''  
+4. Model hyperparameters   
 
-### 5. Quantitative analysis
+The below
 
 
-### 6. Ethical consideration
+### Quantitative analysis
+
+
+### Ethical consideration
