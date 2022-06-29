@@ -174,6 +174,55 @@ Compared with training data, evaluation (or test) data containes 22 columns with
 
 1. Metrics  
 
-     The best remediated EBM is a classificiation system to predict whether to approve an candidate's application of home mortgage or not, and was trained multiple times in a random grid search with a dictionary of hyperparameter list. It outperforms other two models concerning the [interpretion](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%201/Assignmnet_1.ipynb), [feature importance](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%202.ipynb), [discrimination](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%203.ipynb), [red-teaming](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%204.ipynb),  [model debugging](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%205.ipynb).
+     The best remediated EBM is a classificiation system to predict whether to approve an candidate's application of home mortgage or not, and was trained multiple times in a random grid search with a dictionary of hyperparameter list. It outperforms other two models concerning the [interpretion](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%201/Assignmnet_1.ipynb), [feature importance](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%202.ipynb), [discrimination](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%203.ipynb), [red-teaming](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%204.ipynb),  [model debugging](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%205.ipynb).  
+     
+    The AUC score of the EBM from the Assignment 1 is shown below.
+    
+    
+2. Visualization  
 
-### Ethical consideration
+     This project includes 5 coding file which develops the EBM cosidering different aspects. The plots displayed below correspond to each topic.
+     
+     **Assignment 1 Model score**  
+     
+     ![image](https://user-images.githubusercontent.com/98284132/176549638-73662bf6-f0e3-4e0b-add7-c2b30a07aba2.png)
+     
+     **Assignment 2 Feature importance**
+     
+      - Global feature importance  
+      
+      ![image](https://user-images.githubusercontent.com/98284132/176549514-278d634f-5bc5-402f-8d1a-590758eb512c.png)
+     
+     - Local feature importance  
+     
+       ![image](https://user-images.githubusercontent.com/98284132/176539508-ae0cce44-e6f3-4351-9a4b-773a18c80481.png)
+
+     **Assignment 3 Discrimaination**
+     
+     - EBM grid search result  
+     
+       ![image](https://user-images.githubusercontent.com/98284132/176543392-9fc0a785-0bd4-4ffd-990a-cac3587987d0.png)
+
+     - Retrained impact raio of differnet group of region
+     
+       ![image](https://user-images.githubusercontent.com/98284132/176544201-7300819d-4713-4538-89b8-5c83b0dba83c.png)  
+       
+     **Assignment 4 Model extraction attack**  
+      
+       ![image](https://user-images.githubusercontent.com/98284132/176545205-2846cb3b-5c87-4e8e-afe3-caac6245badb.png)  
+      
+     **Assignment 5 Model debugging**
+     
+     - Residual analysis
+     
+      ![image](https://user-images.githubusercontent.com/98284132/176547818-a10ed360-907a-4165-bca6-43d59552b0df.png)  
+      
+     - Retained EBM AUC after the removal of outliers  
+     
+      ![image](https://user-images.githubusercontent.com/98284132/176547671-b8c9240a-094d-4858-b006-6eff28f4a233.png)
+
+     Additionally, the Montonic XGBoost performed better than EBM in Assignment 3 concerning the AUC score. However, the Montonic XGBoost did not show a vaild plot in the residual analysis, the EBM is still the best remediated model.  
+     
+### Ethical consideration  
+
+1. Potential negative impacts
