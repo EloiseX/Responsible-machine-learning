@@ -208,9 +208,9 @@ Compared with training data, evaluation (or test) data containes 22 columns with
        ![image](https://user-images.githubusercontent.com/98284132/176544201-7300819d-4713-4538-89b8-5c83b0dba83c.png)  
        
      **Assignment 4 Model extraction attack**  
-      
-       ![image](https://user-images.githubusercontent.com/98284132/176545205-2846cb3b-5c87-4e8e-afe3-caac6245badb.png)  
-      
+     
+     ![image](https://user-images.githubusercontent.com/98284132/176550430-719b6bad-d025-4b05-8705-62d49b96b9be.png)
+
      **Assignment 5 Model debugging**
      
      - Residual analysis
