@@ -174,6 +174,6 @@ Compared with training data, evaluation (or test) data containes 22 columns with
 
 1. Metrics  
 
-     The best remediated EBM is a classificiation system yo predict the  
+     The best remediated EBM is a classificiation system to predict whether to approve an candidate's application of home mortgage or not, and was trained multiple times in a random grid search with a dictionary of hyperparameter list. It outperforms other two models concerning the [interpretion](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%201/Assignmnet_1.ipynb), [feature importance](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%202.ipynb), [discrimination](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%203.ipynb), [red-teaming](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%204.ipynb),  [model debugging](https://github.com/EloiseX/Responsible-machine-learning/blob/main/Assignment%205.ipynb).
 
 ### Ethical consideration
