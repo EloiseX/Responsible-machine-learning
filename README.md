@@ -22,10 +22,12 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ### Intended use
 
+The best remediated EBM was trained to identify the eligibility of candidates to get home mortgage. Banks and other financial institutions could use this model to evaluate candidates' financial conditions. The main task of this proejct is to find whether a candiadte should be accepted to a home mortgage or not. As a classification model, the best remediated EBM was selected from hundreds of models and trained to avoid discrimation, internal/external attacking and model debugging.     
+Generaly, this best remediated EBM performs well in classifing candidates in home mortgage. If the dataset changes to another type (eg.commodity data), this model could be not as good as it works on financial datasets. Additionally, the best remediated EBM is prorbably unsuitable for regression problems.
 
 ### Training data
 
-Home Mortgage Disclosure Act data was downloaded from Github class repository for academical use. In order to fit the interpretable maching learning model, I splited this preprocessed and labeled dataset into 70% of train partition and 30% of test partition. In the training dataset, there are 112253 rows with numeric measurements and binary values. Validation dataset contains 48085 rows in total. Here is a berif describtion of Home Mortgage Disclosure Act dataset:  
+Home Mortgage Disclosure Act data was downloaded from [Github class repository](https://github.com/jphall663/GWU_rml/tree/master/assignments/data) for academical use. In order to fit the interpretable maching learning model, I splited this preprocessed and labeled dataset into 70% of train partition and 30% of test partition. In the training dataset, there are 112253 rows with numeric measurements and binary values. Validation dataset contains 48085 rows in total. Here is a berif describtion of Home Mortgage Disclosure Act dataset:  
 
      '''
      RangeIndex: 160338 entries, 0 to 160337
@@ -91,7 +93,7 @@ Home Mortgage Disclosure Act data was downloaded from Github class repository fo
 
 ### Evaluation data  
   
-The evaluation (or test) data of Home Mortgage Disclosur Act was derived from Github class repository for academical use. There are 19831 rows in the preprocessed and unlabeled test dataset. The information about columns and data type is shown below.  
+The evaluation (or test) data of Home Mortgage Disclosur Act was derived from [Github class repository](https://github.com/jphall663/GWU_rml/tree/master/assignments/data) for academical use. There are 19831 rows in the preprocessed and unlabeled test dataset. The information about columns and data type is shown below.  
 
      '''
      RangeIndex: 19831 entries, 0 to 19830
