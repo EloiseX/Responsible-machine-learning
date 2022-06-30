@@ -1,5 +1,7 @@
 # Model Card
 
+The best remediated EBM is selected by comparing with other two models(Elastic net logistic regression, Monotonic gradient boosting machines). Then, I improved the  best remediated EBM considering feature importance, discrimination, red-teaming and model debugging.
+
 ### Model developing person
 
 Name:   Yiliang Xu   
@@ -196,6 +198,10 @@ Compared with training data, evaluation (or test) data containes 22 columns with
      - Local feature importance  
      
        ![image](https://user-images.githubusercontent.com/98284132/176539508-ae0cce44-e6f3-4351-9a4b-773a18c80481.png)
+       
+     - Partical depedence  
+
+       ![image](https://user-images.githubusercontent.com/98284132/176583776-9f9658fd-6d94-4b68-914c-23b2f665a72c.png) ![image](https://user-images.githubusercontent.com/98284132/176585018-0631d24b-4b85-4916-bdb0-bcb148985ad9.png) ![image](https://user-images.githubusercontent.com/98284132/176584143-e9b99572-63fb-424b-bbe5-a8dfc03e5638.png) ![image](https://user-images.githubusercontent.com/98284132/176584192-6bd589ce-d944-42c2-bcf0-4ad3fe2a34b4.png) ![image](https://user-images.githubusercontent.com/98284132/176584241-ef18499a-a68d-45f3-8780-5c5baed36cc6.png) ![image](https://user-images.githubusercontent.com/98284132/176584376-a3494549-d954-4f91-ade9-91dc0be96483.png) ![image](https://user-images.githubusercontent.com/98284132/176584428-3794be84-01b8-400a-9d57-490defd5f45c.png) ![image](https://user-images.githubusercontent.com/98284132/176584616-b9d5a387-17f1-4f46-b0ae-2f443d8e6a36.png) ![image](https://user-images.githubusercontent.com/98284132/176584661-45c9a811-3d71-407d-8648-8cc4e4b45c48.png) ![image](https://user-images.githubusercontent.com/98284132/176584711-785d8a41-9747-4312-9313-48e66ba69e74.png) ![image](https://user-images.githubusercontent.com/98284132/176584764-1a06ab33-2aa9-4ffe-8858-65ac0b11aedc.png) ![image](https://user-images.githubusercontent.com/98284132/176584805-c81b1322-ac2b-4986-962a-ace5d25f204c.png)
 
      **Assignment 3 Discrimaination**
      
@@ -225,4 +231,14 @@ Compared with training data, evaluation (or test) data containes 22 columns with
      
 ### Ethical consideration  
 
-1. Potential negative impacts
+1. Potential negative impacts  
+
+   The best remediated EBM has the limitation on the prediction without efficient data. The prediction of a feature without data may revert to its mean which is unreasonable for Home morgage dataset. However, montonic GBM solve this problem by applying a montonic constraints. It is important to use domain knowledge to make the model more reasonable and explainable.     
+
+   In the real world, the discrimation may happens in the differnet race concerning the education, financial service and etc. The products or system of a company could be attacked by other individuals or organization in the midnight or Christmas Day. Therefore, we need to design a back-up plan and monitor the model frequently to avoid the discrimation, internal/external attack and some other risks.
+
+2. Potential uncertainties  
+
+   The best remediated EBM is interpretable compared with some other traditional machine learning models. In some case, the EBM may need to sacrifice a level of accuracy to maintain its interpretability. Therefore, this best remediated EBM may not performe well in the case with a high requirement of AUC. In the real world, the large dataset fitting into this best remediated EBM could dramatically increase the time to get results. It's also an unexpected case I met in Assignment 3 that finds the best model in grid search with 500 models. Finding the best remediated EBM costs 8-9 hours to train 500 models.  
+
+   In couclusion, although this model was tested and remediated for bias, there is much more to bias than models and data, and this best remediated EBM should be monitored for bias issues moving forward.
