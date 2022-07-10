@@ -27,7 +27,7 @@ Generaly, this best remediated EBM performs well in classifing candidates in hom
 
 ### Training data
 
-Home Mortgage Disclosure Act data was downloaded from [Github class repository](https://github.com/jphall663/GWU_rml/tree/master/assignments/data) for academical use. In order to fit the interpretable maching learning model, I splited this preprocessed and labeled dataset into 70% of train partition and 30% of test partition. In the training dataset, there are 112253 rows with numeric measurements and binary values. Validation dataset contains 48085 rows in total. Here is a berif describtion of Home Mortgage Disclosure Act dataset:  
+Home Mortgage Disclosure Act data was downloaded from [Github class repository](https://github.com/jphall663/GWU_rml/tree/master/assignments/data) for academical use. In order to fit the interpretable maching learning model, I split this preprocessed and labeled dataset into 70% of train partition and 30% of test partition. In the training dataset, there are 112253 rows with numeric measurements and binary values. Validation dataset contains 48085 rows in total. Here is a berif describtion of Home Mortgage Disclosure Act dataset:  
 
      '''
      RangeIndex: 160338 entries, 0 to 160337
