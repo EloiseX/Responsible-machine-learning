@@ -159,16 +159,15 @@ Compared with training data, evaluation (or test) data containes 22 columns with
      The hyperparameters and settings for the EBM is shown below.
 
           '''
-          max_bins: [128, 256, 512],
-          max_interaction_bins: [16, 32, 64],
-          interactions: [5, 10, 15],
-          outer_bags: [4, 8, 12], 
-          inner_bags: [0, 4],
-          learning_rate: [0.001, 0.01, 0.05],
-          validation_size: [0.1, 0.25, 0.5],
-          min_samples_leaf: [1, 2, 5, 10],
-          max_leaves: [1, 3, 5]
-
+          max_bins: 512,
+          max_interaction_bins: 16,
+          interactions: 10,
+          outer_bags: 4, 
+          inner_bags: 0,
+          learning_rate: 0.001,
+          validation_size: 0.25,
+          min_samples_leaf: 5, 
+          max_leaves: 5
           early_stopping_rounds = 100
           seed = 12345                          # set numpy random seed for better reproducibility
           NTHREAD = 4                           # set number of threads  
