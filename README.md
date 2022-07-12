@@ -22,7 +22,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ### Intended use
 
-The best remediated EBM was trained to identify the eligibility of candidates to get home mortgage. Banks and other financial institutions could use this model to evaluate candidates' financial conditions. The main task of this proejct is to find whether a candiadte should be accepted to a home mortgage or not. As a classification model, the best remediated EBM was selected from hundreds of models and trained to avoid discrimation, internal/external attacking and model debugging.     
+The best remediated EBM was trained to identify the eligibility of candidates to get home mortgage. Banks and other financial institutions could use this model to evaluate candidates' financial conditions. The main task of this proejct is to find whether a candiadte should be accepted to a home mortgage or not. As a classification model, the best remediated EBM was selected from hundreds of models and trained to avoid discrimation, internal/external attacking and model debugging.  
+
 Generaly, this best remediated EBM performs well in classifing candidates in home mortgage. If the dataset changes to another type (eg.commodity data), this model could be not as good as it works on financial datasets. Additionally, the best remediated EBM is prorbably unsuitable for regression problems.
 
 ### Training data
